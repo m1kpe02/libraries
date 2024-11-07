@@ -399,18 +399,18 @@ function OrionLib:MakeNotification(NotificationConfig)
 			Parent = NotificationHolder
 		})
 
-		local NotificationFrame = SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(25, 25, 25), 0, 10), {
+		local NotificationFrame = SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(102, 0, 102), 0, 10), {
 			Parent = NotificationParent, 
 			Size = UDim2.new(1, 0, 0, 0),
 			Position = UDim2.new(1, -55, 0, 0),
 			BackgroundTransparency = 0,
 			AutomaticSize = Enum.AutomaticSize.Y
 		}), {
-			MakeElement("Stroke", Color3.fromRGB(93, 93, 93), 1.2),
+			MakeElement("Stroke", Color3.fromRGB(31, 0, 31), 1.2),
 			MakeElement("Padding", 12, 12, 12, 12),
 			SetProps(MakeElement("Image", NotificationConfig.Image), {
 				Size = UDim2.new(0, 20, 0, 20),
-				ImageColor3 = Color3.fromRGB(240, 240, 240),
+				ImageColor3 = Color3.fromRGB(21, 0, 21),
 				Name = "Icon"
 			}),
 			SetProps(MakeElement("Label", NotificationConfig.Name, 15), {
@@ -425,7 +425,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 				Font = Enum.Font.GothamSemibold,
 				Name = "Content",
 				AutomaticSize = Enum.AutomaticSize.Y,
-				TextColor3 = Color3.fromRGB(200, 200, 200),
+				TextColor3 = Color3.fromRGB(255, 255, 255),
 				TextWrapped = true
 			})
 		})
