@@ -1,3 +1,4 @@
+
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -15,7 +16,7 @@ local OrionLib = {
 			Main = Color3.fromRGB(21, 0, 21),
 			Second = Color3.fromRGB(31, 0, 31),
 			Stroke = Color3.fromRGB(51, 0, 51),
-			Divider = Color3.fromRGB(1, 0, 1),
+			Divider = Color3.fromRGB(11, 0, 11),
 			Text = Color3.fromRGB(255, 255, 255),
 			TextDark = Color3.fromRGB(150, 150, 150)
 		}
@@ -1707,7 +1708,15 @@ function OrionLib:MakeWindow(WindowConfig)
 		end
 		return ElementFunction   
 	end  
+	
+	OrionLib:MakeNotification({
+		Name = "the gui has been loaded",
+		Content = "nice",
+		Time = 2
+	})
+	
 
+	
 	return TabFunction
 end   
 
