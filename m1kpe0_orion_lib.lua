@@ -18,7 +18,7 @@ local OrionLib = {
 			Stroke = Color3.fromRGB(31, 0, 31),
 			Divider = Color3.fromRGB(1, 0, 1),
 			Text = Color3.fromRGB(255, 255, 255),
-			TextDark = Color3.fromRGB(31, 0, 31)
+			TextDark = Color3.fromRGB(102, 0, 102)
 		}
 	},
 	SelectedTheme = "Default",
@@ -399,7 +399,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 			Parent = NotificationHolder
 		})
 
-		local NotificationFrame = SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(102, 0, 102), 0, 10), {
+		local NotificationFrame = SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(11, 0, 11), 0, 10), {
 			Parent = NotificationParent, 
 			Size = UDim2.new(1, 0, 0, 0),
 			Position = UDim2.new(1, -55, 0, 0),
